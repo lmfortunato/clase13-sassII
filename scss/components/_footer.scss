@@ -1,0 +1,16 @@
+/*footer*/
+footer{
+    // @include condicional(orange);
+    background-color: nth($list: $colores, $n: 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    div{
+        a{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

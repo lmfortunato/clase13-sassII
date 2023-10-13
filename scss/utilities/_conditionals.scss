@@ -1,0 +1,11 @@
+//conditionals / condicionales
+@mixin condicional($color-btn){
+    //condicion if y else
+    @if $color-btn == yellow{
+        border: 3px solid $color-btn;
+        background-color: black;
+    } @else{
+        border: 3px solid red;
+        background-color: grey;
+    }
+}

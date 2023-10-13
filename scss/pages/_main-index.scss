@@ -1,0 +1,73 @@
+/*main index*/
+.main-index{
+    .banner{
+        height: 450px;
+        background-image: url(./../assets/cake-banner.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text{
+            color: black;
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: $flex-column;
+            justify-content: center;
+            align-items: center;
+            // @extend %estilos-colores;
+            a{
+                text-decoration: none;
+                // @extend %estilos-colores;
+                color: black;
+                background-color: $color-principal;
+                border-radius: 15px;
+                font-size: 18px;
+                margin: 10px;
+                padding: 10px;
+                @include flex(row, center, center);
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                width: 150px;
+                img{
+                    width: 18px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        display: flex;
+        margin: 50px 40px;
+        justify-content: space-around;
+        column-gap: 30px;
+        div{
+            width: 400px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nosotros-text{
+            @include flex(column, center, flex-start);
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: flex-start;
+            h2{
+                font-size: 40px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            p{
+                font-size: 25px;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        .card{
+            @include medidas-base;
+        }
+    }
+}
